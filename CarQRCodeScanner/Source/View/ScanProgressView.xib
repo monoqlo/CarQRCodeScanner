@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanProgressView" customModule="CarQRCodeScanner" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImageView" destination="8bP-si-nOt" id="OSk-Op-ZMS"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="G8a-R7-Lyt"/>
+                <outlet property="progressBar" destination="psZ-35-PJR" id="mzV-gr-7h2"/>
+                <outlet property="progressBarTrailingConstraint" destination="Yc5-Gg-PfZ" id="rDV-Ql-Yu4"/>
+                <outlet property="progressLabel" destination="UM6-tC-KeU" id="9hO-p6-Mjo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr-progress-bg" translatesAutoresizingMaskIntoConstraints="NO" id="8bP-si-nOt">
+                    <rect key="frame" x="0.0" y="286" width="375" height="95"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="95" id="w8Q-kh-jWv"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psZ-35-PJR" customClass="GradationBar" customModule="CarQRCodeScanner" customModuleProvider="target">
+                    <rect key="frame" x="11" y="316.5" width="353" height="32"/>
+                    <color key="backgroundColor" red="0.73333333329999995" green="0.83529411760000005" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="i94-Un-N4X"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM6-tC-KeU" customClass="CountingLabel" customModule="CarQRCodeScanner" customModuleProvider="target">
+                    <rect key="frame" x="176" y="323.5" width="23.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80053879309999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="psZ-35-PJR" firstAttribute="leading" secondItem="8bP-si-nOt" secondAttribute="leading" constant="11" id="7ej-w0-1Tf"/>
+                <constraint firstAttribute="trailing" secondItem="8bP-si-nOt" secondAttribute="trailing" id="8uK-46-6TX"/>
+                <constraint firstItem="8bP-si-nOt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jnr-1K-LXP"/>
+                <constraint firstItem="8bP-si-nOt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LcX-NS-icG"/>
+                <constraint firstItem="8bP-si-nOt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ra2-2D-ts9"/>
+                <constraint firstItem="UM6-tC-KeU" firstAttribute="centerX" secondItem="8bP-si-nOt" secondAttribute="centerX" id="Y6Z-ef-db8"/>
+                <constraint firstItem="psZ-35-PJR" firstAttribute="trailing" secondItem="8bP-si-nOt" secondAttribute="trailing" priority="999" constant="-11" id="Yc5-Gg-PfZ"/>
+                <constraint firstItem="psZ-35-PJR" firstAttribute="centerY" secondItem="8bP-si-nOt" secondAttribute="centerY" constant="-1" id="wbh-ch-DGQ"/>
+                <constraint firstItem="UM6-tC-KeU" firstAttribute="centerY" secondItem="8bP-si-nOt" secondAttribute="centerY" id="yUu-Ij-fr4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="9LW-jM-IQC"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qr-progress-bg" width="49" height="95"/>
+    </resources>
+</document>

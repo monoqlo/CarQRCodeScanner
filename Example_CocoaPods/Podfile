@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'CarQRCodeScanner_Example' do
+  pod 'CarQRCodeScanner', :path => '../'
+end

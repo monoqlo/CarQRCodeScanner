@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QRコード読み取り-->
+        <scene sceneID="4aH-qa-eTQ">
+            <objects>
+                <viewController storyboardIdentifier="CarInspectionCertificateQRScannerViewController" id="xlf-zS-Ri4" customClass="CarQRCodeScannerViewController" customModule="CarQRCodeScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PiW-ra-ThR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKR-1p-OXQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-nc-9We">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="524"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr_frame" translatesAutoresizingMaskIntoConstraints="NO" id="euh-Xq-W1J">
+                                        <rect key="frame" x="97.5" y="172" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="euh-Xq-W1J" secondAttribute="height" multiplier="1:1" id="bUV-R4-2gM"/>
+                                            <constraint firstAttribute="height" constant="180" id="hLW-rj-JN8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr-success-small" translatesAutoresizingMaskIntoConstraints="NO" id="aII-ZC-J82" customClass="ScanCheckmarkView" customModule="CarQRCodeScanner" customModuleProvider="target">
+                                        <rect key="frame" x="171.5" y="246" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="fly-4f-uo5"/>
+                                            <constraint firstAttribute="width" constant="32" id="xVH-2t-fwi"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aII-ZC-J82" firstAttribute="centerX" secondItem="euh-Xq-W1J" secondAttribute="centerX" id="EKW-b6-bll"/>
+                                    <constraint firstItem="euh-Xq-W1J" firstAttribute="centerY" secondItem="Zo7-nc-9We" secondAttribute="centerY" id="QI7-Wa-VLv"/>
+                                    <constraint firstItem="aII-ZC-J82" firstAttribute="centerY" secondItem="euh-Xq-W1J" secondAttribute="centerY" id="eRQ-mt-jwI"/>
+                                    <constraint firstItem="euh-Xq-W1J" firstAttribute="centerX" secondItem="Zo7-nc-9We" secondAttribute="centerX" id="ygK-UP-qEf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQe-2V-LHG" customClass="ScanStatusView" customModule="CarQRCodeScanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="524" width="375" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="NFw-y7-XbZ"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTY-Ua-QXu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="572"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkU-ka-nlx">
+                                        <rect key="frame" x="67.5" y="201.5" width="240" height="169"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr-success-large" translatesAutoresizingMaskIntoConstraints="NO" id="Xnv-mq-4JY">
+                                                <rect key="frame" x="64" y="0.0" width="112" height="112"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="112" id="DwB-EL-1rg"/>
+                                                    <constraint firstAttribute="height" constant="112" id="jJc-jW-BsI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ab-sF-0UY">
+                                                <rect key="frame" x="7.5" y="128" width="225.5" height="41"/>
+                                                <string key="text">全てのQRコードが
+正常にスキャンされました！</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="169" id="52p-vJ-CNn"/>
+                                            <constraint firstAttribute="bottom" secondItem="3ab-sF-0UY" secondAttribute="bottom" id="6hS-EN-w5M"/>
+                                            <constraint firstItem="3ab-sF-0UY" firstAttribute="top" secondItem="Xnv-mq-4JY" secondAttribute="bottom" constant="16" id="T7U-gZ-Lnv"/>
+                                            <constraint firstAttribute="bottom" secondItem="3ab-sF-0UY" secondAttribute="bottom" id="aDd-0V-ORg"/>
+                                            <constraint firstItem="Xnv-mq-4JY" firstAttribute="top" secondItem="pkU-ka-nlx" secondAttribute="top" id="act-XS-eXS"/>
+                                            <constraint firstItem="Xnv-mq-4JY" firstAttribute="centerX" secondItem="pkU-ka-nlx" secondAttribute="centerX" id="gqn-Ht-fJI"/>
+                                            <constraint firstAttribute="width" constant="240" id="h4A-0y-TdY"/>
+                                            <constraint firstItem="3ab-sF-0UY" firstAttribute="centerX" secondItem="pkU-ka-nlx" secondAttribute="centerX" id="hUH-wC-my0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25882352941176473" green="0.7686274509803922" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pkU-ka-nlx" firstAttribute="centerX" secondItem="aTY-Ua-QXu" secondAttribute="centerX" id="6zK-L8-hXv"/>
+                                    <constraint firstItem="pkU-ka-nlx" firstAttribute="centerY" secondItem="aTY-Ua-QXu" secondAttribute="centerY" id="Rh9-fL-oe0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlh-dO-irf" customClass="ScanProgressView" customModule="CarQRCodeScanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="572" width="375" height="95"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="X5j-QP-fOT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tKR-1p-OXQ" secondAttribute="bottom" id="28m-Vi-c7c"/>
+                            <constraint firstAttribute="bottom" secondItem="Nlh-dO-irf" secondAttribute="bottom" id="2T6-Xf-q1i"/>
+                            <constraint firstItem="Nlh-dO-irf" firstAttribute="top" secondItem="sQe-2V-LHG" secondAttribute="bottom" id="E9a-76-oh9"/>
+                            <constraint firstAttribute="trailing" secondItem="sQe-2V-LHG" secondAttribute="trailing" id="QXp-KQ-h8v"/>
+                            <constraint firstItem="Zo7-nc-9We" firstAttribute="leading" secondItem="PiW-ra-ThR" secondAttribute="leading" id="S4i-YU-Y23"/>
+                            <constraint firstItem="sQe-2V-LHG" firstAttribute="top" secondItem="Zo7-nc-9We" secondAttribute="bottom" id="YFb-rO-aax"/>
+                            <constraint firstItem="tKR-1p-OXQ" firstAttribute="top" secondItem="PiW-ra-ThR" secondAttribute="top" id="YXO-jM-eVY"/>
+                            <constraint firstItem="sQe-2V-LHG" firstAttribute="leading" secondItem="PiW-ra-ThR" secondAttribute="leading" id="efD-Z1-Rpm"/>
+                            <constraint firstItem="aTY-Ua-QXu" firstAttribute="top" secondItem="PiW-ra-ThR" secondAttribute="top" id="f7f-mb-DF3"/>
+                            <constraint firstItem="aTY-Ua-QXu" firstAttribute="leading" secondItem="PiW-ra-ThR" secondAttribute="leading" id="lJH-v4-478"/>
+                            <constraint firstAttribute="trailing" secondItem="Zo7-nc-9We" secondAttribute="trailing" id="ngM-mG-3Fj"/>
+                            <constraint firstItem="Zo7-nc-9We" firstAttribute="top" secondItem="PiW-ra-ThR" secondAttribute="top" id="pPP-u0-B1d"/>
+                            <constraint firstAttribute="trailing" secondItem="aTY-Ua-QXu" secondAttribute="trailing" id="qIk-us-Xn8"/>
+                            <constraint firstItem="Nlh-dO-irf" firstAttribute="leading" secondItem="PiW-ra-ThR" secondAttribute="leading" id="wF0-fV-LqZ"/>
+                            <constraint firstItem="Nlh-dO-irf" firstAttribute="top" secondItem="aTY-Ua-QXu" secondAttribute="bottom" id="y3w-Xh-XwU"/>
+                            <constraint firstAttribute="trailing" secondItem="Nlh-dO-irf" secondAttribute="trailing" id="yNC-Ae-dpi"/>
+                            <constraint firstAttribute="trailing" secondItem="tKR-1p-OXQ" secondAttribute="trailing" id="yfO-X0-FgP"/>
+                            <constraint firstItem="tKR-1p-OXQ" firstAttribute="leading" secondItem="PiW-ra-ThR" secondAttribute="leading" id="zef-Rw-71N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Axh-GF-tRC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QRコード読み取り" id="ZWW-zl-2R7"/>
+                    <connections>
+                        <outlet property="checkmark" destination="aII-ZC-J82" id="bdL-QI-bau"/>
+                        <outlet property="previewView" destination="tKR-1p-OXQ" id="Ane-kZ-p5a"/>
+                        <outlet property="progressView" destination="Nlh-dO-irf" id="2c4-OQ-X5Q"/>
+                        <outlet property="qrFrameView" destination="euh-Xq-W1J" id="QLd-vz-f3Z"/>
+                        <outlet property="statusView" destination="sQe-2V-LHG" id="dSS-Gp-RiS"/>
+                        <outlet property="successfulView" destination="aTY-Ua-QXu" id="Dxf-IK-7y1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sns-TE-7d8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qr-success-large" width="112" height="112"/>
+        <image name="qr-success-small" width="32" height="32"/>
+        <image name="qr_frame" width="102" height="102"/>
+    </resources>
+</document>

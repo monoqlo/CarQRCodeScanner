@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A995DE51D73BB6A00EE12DF /* CarQRCodeScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A995DE41D73BB6A00EE12DF /* CarQRCodeScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A995DF81D73BBF200EE12DF /* CarInspectionCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995DF11D73BBF200EE12DF /* CarInspectionCertificate.swift */; };
+		6A995DF91D73BBF200EE12DF /* CarInspectionCertificateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995DF21D73BBF200EE12DF /* CarInspectionCertificateItem.swift */; };
+		6A995DFA1D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995DF31D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanner.swift */; };
+		6A995DFB1D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995DF41D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanResult.swift */; };
+		6A995DFC1D73BBF200EE12DF /* CarInspectionCertificateSharedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995DF51D73BBF200EE12DF /* CarInspectionCertificateSharedItems.swift */; };
+		6A995DFD1D73BBF200EE12DF /* LightCarInspectionCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995DF61D73BBF200EE12DF /* LightCarInspectionCertificate.swift */; };
+		6A995DFE1D73BBF200EE12DF /* StandardCarInspectionCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995DF71D73BBF200EE12DF /* StandardCarInspectionCertificate.swift */; };
+		6A995E021D73BBFB00EE12DF /* NSDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995DFF1D73BBFB00EE12DF /* NSDateUtil.swift */; };
+		6A995E031D73BBFB00EE12DF /* UIColor+Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E001D73BBFB00EE12DF /* UIColor+Scanner.swift */; };
+		6A995E041D73BBFB00EE12DF /* Vibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E011D73BBFB00EE12DF /* Vibrator.swift */; };
+		6A995E0E1D73BC0200EE12DF /* CountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E051D73BC0200EE12DF /* CountingLabel.swift */; };
+		6A995E0F1D73BC0200EE12DF /* GradationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E061D73BC0200EE12DF /* GradationBar.swift */; };
+		6A995E101D73BC0200EE12DF /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E071D73BC0200EE12DF /* PopUp.swift */; };
+		6A995E111D73BC0200EE12DF /* ScanCheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E081D73BC0200EE12DF /* ScanCheckmarkView.swift */; };
+		6A995E121D73BC0200EE12DF /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A995E091D73BC0200EE12DF /* Scanner.storyboard */; };
+		6A995E131D73BC0200EE12DF /* ScanProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E0A1D73BC0200EE12DF /* ScanProgressView.swift */; };
+		6A995E141D73BC0200EE12DF /* ScanProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A995E0B1D73BC0200EE12DF /* ScanProgressView.xib */; };
+		6A995E151D73BC0200EE12DF /* ScanStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E0C1D73BC0200EE12DF /* ScanStatusView.swift */; };
+		6A995E161D73BC0200EE12DF /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E0D1D73BC0200EE12DF /* UIView+CornerRadius.swift */; };
+		6A995E1A1D73BC0C00EE12DF /* CarQRCodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E171D73BC0C00EE12DF /* CarQRCodeScannerController.swift */; };
+		6A995E1B1D73BC0C00EE12DF /* CarQRCodeScannerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E181D73BC0C00EE12DF /* CarQRCodeScannerControllerDelegate.swift */; };
+		6A995E1C1D73BC0C00EE12DF /* CarQRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E191D73BC0C00EE12DF /* CarQRCodeScannerViewController.swift */; };
+		6A995E1E1D73BD1100EE12DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A995E1D1D73BD1100EE12DF /* Assets.xcassets */; };
+		6A995E211D73BEC900EE12DF /* ZXingObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A995E201D73BEC900EE12DF /* ZXingObjC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A995DE11D73BB6A00EE12DF /* CarQRCodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarQRCodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A995DE41D73BB6A00EE12DF /* CarQRCodeScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarQRCodeScanner.h; sourceTree = "<group>"; };
+		6A995DE61D73BB6A00EE12DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A995DF11D73BBF200EE12DF /* CarInspectionCertificate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarInspectionCertificate.swift; path = Source/Model/CarInspectionCertificate.swift; sourceTree = "<group>"; };
+		6A995DF21D73BBF200EE12DF /* CarInspectionCertificateItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarInspectionCertificateItem.swift; path = Source/Model/CarInspectionCertificateItem.swift; sourceTree = "<group>"; };
+		6A995DF31D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarInspectionCertificateQRCodeScanner.swift; path = Source/Model/CarInspectionCertificateQRCodeScanner.swift; sourceTree = "<group>"; };
+		6A995DF41D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarInspectionCertificateQRCodeScanResult.swift; path = Source/Model/CarInspectionCertificateQRCodeScanResult.swift; sourceTree = "<group>"; };
+		6A995DF51D73BBF200EE12DF /* CarInspectionCertificateSharedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarInspectionCertificateSharedItems.swift; path = Source/Model/CarInspectionCertificateSharedItems.swift; sourceTree = "<group>"; };
+		6A995DF61D73BBF200EE12DF /* LightCarInspectionCertificate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightCarInspectionCertificate.swift; path = Source/Model/LightCarInspectionCertificate.swift; sourceTree = "<group>"; };
+		6A995DF71D73BBF200EE12DF /* StandardCarInspectionCertificate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandardCarInspectionCertificate.swift; path = Source/Model/StandardCarInspectionCertificate.swift; sourceTree = "<group>"; };
+		6A995DFF1D73BBFB00EE12DF /* NSDateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDateUtil.swift; path = Source/Util/NSDateUtil.swift; sourceTree = "<group>"; };
+		6A995E001D73BBFB00EE12DF /* UIColor+Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Scanner.swift"; path = "Source/Util/UIColor+Scanner.swift"; sourceTree = "<group>"; };
+		6A995E011D73BBFB00EE12DF /* Vibrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vibrator.swift; path = Source/Util/Vibrator.swift; sourceTree = "<group>"; };
+		6A995E051D73BC0200EE12DF /* CountingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountingLabel.swift; path = Source/View/CountingLabel.swift; sourceTree = "<group>"; };
+		6A995E061D73BC0200EE12DF /* GradationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradationBar.swift; path = Source/View/GradationBar.swift; sourceTree = "<group>"; };
+		6A995E071D73BC0200EE12DF /* PopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopUp.swift; path = Source/View/PopUp.swift; sourceTree = "<group>"; };
+		6A995E081D73BC0200EE12DF /* ScanCheckmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanCheckmarkView.swift; path = Source/View/ScanCheckmarkView.swift; sourceTree = "<group>"; };
+		6A995E091D73BC0200EE12DF /* Scanner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Scanner.storyboard; path = Source/View/Scanner.storyboard; sourceTree = "<group>"; };
+		6A995E0A1D73BC0200EE12DF /* ScanProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanProgressView.swift; path = Source/View/ScanProgressView.swift; sourceTree = "<group>"; };
+		6A995E0B1D73BC0200EE12DF /* ScanProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScanProgressView.xib; path = Source/View/ScanProgressView.xib; sourceTree = "<group>"; };
+		6A995E0C1D73BC0200EE12DF /* ScanStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanStatusView.swift; path = Source/View/ScanStatusView.swift; sourceTree = "<group>"; };
+		6A995E0D1D73BC0200EE12DF /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+CornerRadius.swift"; path = "Source/View/UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		6A995E171D73BC0C00EE12DF /* CarQRCodeScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarQRCodeScannerController.swift; path = Source/ViewController/CarQRCodeScannerController.swift; sourceTree = "<group>"; };
+		6A995E181D73BC0C00EE12DF /* CarQRCodeScannerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarQRCodeScannerControllerDelegate.swift; path = Source/ViewController/CarQRCodeScannerControllerDelegate.swift; sourceTree = "<group>"; };
+		6A995E191D73BC0C00EE12DF /* CarQRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarQRCodeScannerViewController.swift; path = Source/ViewController/CarQRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		6A995E1D1D73BD1100EE12DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A995E201D73BEC900EE12DF /* ZXingObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZXingObjC.framework; path = ../Carthage/Build/iOS/ZXingObjC.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A995DDD1D73BB6A00EE12DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A995E211D73BEC900EE12DF /* ZXingObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A995DD71D73BB6A00EE12DF = {
+			isa = PBXGroup;
+			children = (
+				6A995DE31D73BB6A00EE12DF /* CarQRCodeScanner */,
+				6A995DE21D73BB6A00EE12DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A995DE21D73BB6A00EE12DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A995DE11D73BB6A00EE12DF /* CarQRCodeScanner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A995DE31D73BB6A00EE12DF /* CarQRCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				6A995DEC1D73BB8900EE12DF /* Source */,
+				6A995E221D73BEDD00EE12DF /* Framework */,
+				6A995E1D1D73BD1100EE12DF /* Assets.xcassets */,
+				6A995DE41D73BB6A00EE12DF /* CarQRCodeScanner.h */,
+				6A995DE61D73BB6A00EE12DF /* Info.plist */,
+			);
+			path = CarQRCodeScanner;
+			sourceTree = "<group>";
+		};
+		6A995DEC1D73BB8900EE12DF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6A995DF01D73BBE100EE12DF /* Util */,
+				6A995DED1D73BBCF00EE12DF /* Model */,
+				6A995DEF1D73BBDD00EE12DF /* View */,
+				6A995DEE1D73BBD400EE12DF /* ViewController */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		6A995DED1D73BBCF00EE12DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A995DF11D73BBF200EE12DF /* CarInspectionCertificate.swift */,
+				6A995DF21D73BBF200EE12DF /* CarInspectionCertificateItem.swift */,
+				6A995DF31D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanner.swift */,
+				6A995DF41D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanResult.swift */,
+				6A995DF51D73BBF200EE12DF /* CarInspectionCertificateSharedItems.swift */,
+				6A995DF61D73BBF200EE12DF /* LightCarInspectionCertificate.swift */,
+				6A995DF71D73BBF200EE12DF /* StandardCarInspectionCertificate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6A995DEE1D73BBD400EE12DF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A995E171D73BC0C00EE12DF /* CarQRCodeScannerController.swift */,
+				6A995E181D73BC0C00EE12DF /* CarQRCodeScannerControllerDelegate.swift */,
+				6A995E191D73BC0C00EE12DF /* CarQRCodeScannerViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		6A995DEF1D73BBDD00EE12DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A995E051D73BC0200EE12DF /* CountingLabel.swift */,
+				6A995E061D73BC0200EE12DF /* GradationBar.swift */,
+				6A995E071D73BC0200EE12DF /* PopUp.swift */,
+				6A995E081D73BC0200EE12DF /* ScanCheckmarkView.swift */,
+				6A995E091D73BC0200EE12DF /* Scanner.storyboard */,
+				6A995E0A1D73BC0200EE12DF /* ScanProgressView.swift */,
+				6A995E0B1D73BC0200EE12DF /* ScanProgressView.xib */,
+				6A995E0C1D73BC0200EE12DF /* ScanStatusView.swift */,
+				6A995E0D1D73BC0200EE12DF /* UIView+CornerRadius.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6A995DF01D73BBE100EE12DF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6A995DFF1D73BBFB00EE12DF /* NSDateUtil.swift */,
+				6A995E001D73BBFB00EE12DF /* UIColor+Scanner.swift */,
+				6A995E011D73BBFB00EE12DF /* Vibrator.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		6A995E221D73BEDD00EE12DF /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				6A995E201D73BEC900EE12DF /* ZXingObjC.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6A995DDE1D73BB6A00EE12DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A995DE51D73BB6A00EE12DF /* CarQRCodeScanner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6A995DE01D73BB6A00EE12DF /* CarQRCodeScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A995DE91D73BB6A00EE12DF /* Build configuration list for PBXNativeTarget "CarQRCodeScanner" */;
+			buildPhases = (
+				6A995DDC1D73BB6A00EE12DF /* Sources */,
+				6A995DDD1D73BB6A00EE12DF /* Frameworks */,
+				6A995DDE1D73BB6A00EE12DF /* Headers */,
+				6A995DDF1D73BB6A00EE12DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarQRCodeScanner;
+			productName = CarQRCodeScanner;
+			productReference = 6A995DE11D73BB6A00EE12DF /* CarQRCodeScanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A995DD81D73BB6A00EE12DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "米山 隆貴";
+				TargetAttributes = {
+					6A995DE01D73BB6A00EE12DF = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 6A995DDB1D73BB6A00EE12DF /* Build configuration list for PBXProject "CarQRCodeScanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6A995DD71D73BB6A00EE12DF;
+			productRefGroup = 6A995DE21D73BB6A00EE12DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A995DE01D73BB6A00EE12DF /* CarQRCodeScanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A995DDF1D73BB6A00EE12DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A995E141D73BC0200EE12DF /* ScanProgressView.xib in Resources */,
+				6A995E1E1D73BD1100EE12DF /* Assets.xcassets in Resources */,
+				6A995E121D73BC0200EE12DF /* Scanner.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A995DDC1D73BB6A00EE12DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A995E021D73BBFB00EE12DF /* NSDateUtil.swift in Sources */,
+				6A995DFB1D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanResult.swift in Sources */,
+				6A995DF81D73BBF200EE12DF /* CarInspectionCertificate.swift in Sources */,
+				6A995E151D73BC0200EE12DF /* ScanStatusView.swift in Sources */,
+				6A995E161D73BC0200EE12DF /* UIView+CornerRadius.swift in Sources */,
+				6A995DFC1D73BBF200EE12DF /* CarInspectionCertificateSharedItems.swift in Sources */,
+				6A995E0E1D73BC0200EE12DF /* CountingLabel.swift in Sources */,
+				6A995E131D73BC0200EE12DF /* ScanProgressView.swift in Sources */,
+				6A995E1B1D73BC0C00EE12DF /* CarQRCodeScannerControllerDelegate.swift in Sources */,
+				6A995E031D73BBFB00EE12DF /* UIColor+Scanner.swift in Sources */,
+				6A995DFD1D73BBF200EE12DF /* LightCarInspectionCertificate.swift in Sources */,
+				6A995E0F1D73BC0200EE12DF /* GradationBar.swift in Sources */,
+				6A995DF91D73BBF200EE12DF /* CarInspectionCertificateItem.swift in Sources */,
+				6A995E111D73BC0200EE12DF /* ScanCheckmarkView.swift in Sources */,
+				6A995DFA1D73BBF200EE12DF /* CarInspectionCertificateQRCodeScanner.swift in Sources */,
+				6A995E041D73BBFB00EE12DF /* Vibrator.swift in Sources */,
+				6A995E101D73BC0200EE12DF /* PopUp.swift in Sources */,
+				6A995E1C1D73BC0C00EE12DF /* CarQRCodeScannerViewController.swift in Sources */,
+				6A995E1A1D73BC0C00EE12DF /* CarQRCodeScannerController.swift in Sources */,
+				6A995DFE1D73BBF200EE12DF /* StandardCarInspectionCertificate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6A995DE71D73BB6A00EE12DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A995DE81D73BB6A00EE12DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A995DEA1D73BB6A00EE12DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CarQRCodeScanner/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.smartdrive.CarQRCodeScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		6A995DEB1D73BB6A00EE12DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CarQRCodeScanner/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.smartdrive.CarQRCodeScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A995DDB1D73BB6A00EE12DF /* Build configuration list for PBXProject "CarQRCodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A995DE71D73BB6A00EE12DF /* Debug */,
+				6A995DE81D73BB6A00EE12DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A995DE91D73BB6A00EE12DF /* Build configuration list for PBXNativeTarget "CarQRCodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A995DEA1D73BB6A00EE12DF /* Debug */,
+				6A995DEB1D73BB6A00EE12DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A995DD81D73BB6A00EE12DF /* Project object */;
+}

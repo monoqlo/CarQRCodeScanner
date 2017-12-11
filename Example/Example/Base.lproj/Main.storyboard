@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PJp-Uu-gLH">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample App-->
+        <scene sceneID="BjS-Gw-5jw">
+            <objects>
+                <viewController id="Ism-Vb-uPU" customClass="MainViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Snv-yQ-21K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIn-HC-Nuq">
+                                <rect key="frame" x="37" y="385.66666666666669" width="301" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="車検証QRコードを読み取る">
+                                    <color key="titleColor" red="0.2156862766" green="0.66274511810000003" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startScanButtonTouchedUpInside:" destination="Ism-Vb-uPU" eventType="touchUpInside" id="dbW-2n-uP7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aIn-HC-Nuq" firstAttribute="centerY" secondItem="Snv-yQ-21K" secondAttribute="centerY" id="C85-U6-Fds"/>
+                            <constraint firstItem="aIn-HC-Nuq" firstAttribute="centerX" secondItem="YlB-WL-74f" secondAttribute="centerX" id="tWG-ex-J6C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YlB-WL-74f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sample App" id="vm1-pf-8Oy"/>
+                    <connections>
+                        <segue destination="VVJ-z3-PfQ" kind="show" identifier="ToCarInspectionCertificateDetail" id="rcW-uc-zm2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Whq-GN-Px2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379" y="289"/>
+        </scene>
+        <!--車検証詳細-->
+        <scene sceneID="tn2-bN-xa2">
+            <objects>
+                <tableViewController id="VVJ-z3-PfQ" customClass="CarInspectionCertificateTableViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qua-uW-JB8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarInspectionCertificateItemCell" rowHeight="61" id="jW1-hT-n0k" customClass="CarInspectionCertificateItemCell" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jW1-hT-n0k" id="mmb-ce-KrS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPo-i1-kqf">
+                                            <rect key="frame" x="24" y="11" width="343" height="14.666666666666664"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="ACQ-Kz-ldp"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                            <color key="textColor" red="0.2156862766" green="0.66274511810000003" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssx-9x-Ifw">
+                                            <rect key="frame" x="24" y="33" width="343" height="9"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rPo-i1-kqf" firstAttribute="top" secondItem="mmb-ce-KrS" secondAttribute="topMargin" id="2Mg-V4-T3w"/>
+                                        <constraint firstItem="Ssx-9x-Ifw" firstAttribute="trailing" secondItem="rPo-i1-kqf" secondAttribute="trailing" id="64C-X6-i5A"/>
+                                        <constraint firstItem="Ssx-9x-Ifw" firstAttribute="top" secondItem="rPo-i1-kqf" secondAttribute="bottom" constant="8" id="BSz-pu-IsP"/>
+                                        <constraint firstItem="rPo-i1-kqf" firstAttribute="leading" secondItem="mmb-ce-KrS" secondAttribute="leadingMargin" constant="8" id="JYd-EN-xNU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ssx-9x-Ifw" secondAttribute="bottom" constant="8" id="Kzc-Xb-YGm"/>
+                                        <constraint firstItem="rPo-i1-kqf" firstAttribute="trailing" secondItem="mmb-ce-KrS" secondAttribute="trailingMargin" constant="8" id="bOJ-j3-A51"/>
+                                        <constraint firstItem="Ssx-9x-Ifw" firstAttribute="leading" secondItem="rPo-i1-kqf" secondAttribute="leading" id="dLe-jV-fQi"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="Ssx-9x-Ifw" id="HsQ-VL-RwO"/>
+                                    <outlet property="nameLabel" destination="rPo-i1-kqf" id="Wzj-EW-3ky"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VVJ-z3-PfQ" id="7dU-YP-Kxn"/>
+                            <outlet property="delegate" destination="VVJ-z3-PfQ" id="ApC-zK-RFN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="車検証詳細" id="8HF-CH-qBt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dg-pY-szz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="289"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e7q-1E-9RB">
+            <objects>
+                <navigationController id="PJp-Uu-gLH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aiN-gy-G5U">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ism-Vb-uPU" kind="relationship" relationship="rootViewController" id="Xfb-cf-USX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osO-hd-MQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314" y="289"/>
+        </scene>
+    </scenes>
+</document>
