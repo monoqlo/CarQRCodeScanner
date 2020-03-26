@@ -161,7 +161,7 @@ class CarQRCodeScannerViewController: UIViewController {
             videoSizeY = 1280
         }
         
-        if UIInterfaceOrientationIsPortrait(orientation) == true {
+        if orientation.isPortrait == true {
             scaleVideoX = previewView.frame.size.width / videoSizeX
             scaleVideoY = previewView.frame.size.height / videoSizeY
             scaleVideo = max(scaleVideoX, scaleVideoY)

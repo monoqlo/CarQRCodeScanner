@@ -75,8 +75,8 @@ class CountingLabel: UILabel {
         
         let displayLink = CADisplayLink(target: self, selector: #selector(CountingLabel.updateValue(withDisplayLink:)))
         displayLink.preferredFramesPerSecond = 2
-        displayLink.add(to: RunLoop.main, forMode: RunLoopMode.defaultRunLoopMode)
-        displayLink.add(to: RunLoop.main, forMode: RunLoopMode.UITrackingRunLoopMode)
+        displayLink.add(to: RunLoop.main, forMode: RunLoop.Mode.default)
+        displayLink.add(to: RunLoop.main, forMode: RunLoop.Mode.tracking)
         self.displayLink = displayLink
     }
     
