@@ -44,7 +44,7 @@ extension PopUp where Self: UIView {
             alpha = 1
             dismiss()
         case .fade:
-            UIView.animate(withDuration: 0.3, delay: 0, options: UIViewAnimationOptions(), animations: {
+            UIView.animate(withDuration: 0.3, delay: 0, options: UIView.AnimationOptions(), animations: {
                 self.alpha = 1
                 }, completion: { (finished) in
                     dismiss()
@@ -59,7 +59,7 @@ extension PopUp where Self: UIView {
             isHidden = true
             completion?()
         case let .fade(duration, delay):
-            UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions(), animations: {
+            UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions(), animations: {
                 self.alpha = 0
                 }, completion: { (finished) in
                     self.isHidden = true

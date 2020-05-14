@@ -114,7 +114,7 @@ class ScanProgressView: UIView {
     }
     
     fileprivate func runCompletedProgressAnimation() {
-        UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions(), animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, options: UIView.AnimationOptions(), animations: {
             self.progressLabel.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             }, completion: { (_) in
                 UIView.animate(withDuration: 0.1, animations: {
